@@ -3,7 +3,7 @@
 #include <iostream>
 //[*][*][*][*][*][*][*][*][*][*][*][*][*][*][*][*][*][*][*][*][*][*][*][*][*][*]
 
-#define DEBUG 0                        // поменять на 1, если нужен дебаг мод
+#define DEBUG 0                        // change to 1, if u want debug mod
 #define DBG(expr) if (DEBUG) {expr}
 
 //[*][*][*][*][*][*][*][*][*][*][*][*][*][*][*][*][*][*][*][*][*][*][*][*][*][*]
@@ -118,7 +118,7 @@ void recalloc (STACK* stack)
 {
 stack_ok(stack);
 
-                                              //когда умножаю на 2 реалок умирает
+                                              //realloc die, when  *2
     (*stack).buf = (int*) realloc((*stack).buf,((*stack).capacity + upsize)  * sizeof(int));
     (*stack).capacity += upsize ;
 
